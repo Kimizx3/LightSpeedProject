@@ -1,0 +1,21 @@
+# ninja log v6
+1	44	7532472420788802	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-mkdir	8fa0e78029d9f94c
+1	44	7532472420788802	E:/CPPStuff/LightSpeedProject/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-mkdir	8fa0e78029d9f94c
+44	162392	7532474044268600	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-download	d1d84f4413dca15d
+44	162392	7532474044268600	E:/CPPStuff/LightSpeedProject/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-download	d1d84f4413dca15d
+162392	162493	7532474044309294	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update	139fad94b04c081d
+162392	162493	7532474044309294	E:/CPPStuff/LightSpeedProject/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update	139fad94b04c081d
+162494	162563	7532474045644386	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch	b8dd5b91bfb4fa30
+162494	162563	7532474045644386	E:/CPPStuff/LightSpeedProject/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch	b8dd5b91bfb4fa30
+162563	162601	7532474046365485	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure	9f08d87dc54259f8
+162563	162601	7532474046365485	E:/CPPStuff/LightSpeedProject/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure	9f08d87dc54259f8
+162601	162638	7532474046728773	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build	cd8b3ea7c7938019
+162601	162638	7532474046728773	E:/CPPStuff/LightSpeedProject/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build	cd8b3ea7c7938019
+162638	162675	7532474047094286	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install	51a3f4630aebab6f
+162638	162675	7532474047094286	E:/CPPStuff/LightSpeedProject/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install	51a3f4630aebab6f
+162675	162711	7532474047467707	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test	b0f6a6a4f2609e53
+162675	162711	7532474047467707	E:/CPPStuff/LightSpeedProject/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test	b0f6a6a4f2609e53
+162711	162761	7532474047961653	CMakeFiles/sfml-populate-complete	2e857d4ce6454f86
+162711	162761	7532474047961653	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-done	2e857d4ce6454f86
+162711	162761	7532474047961653	E:/CPPStuff/LightSpeedProject/cmake-build-debug/_deps/sfml-subbuild/CMakeFiles/sfml-populate-complete	2e857d4ce6454f86
+162711	162761	7532474047961653	E:/CPPStuff/LightSpeedProject/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-done	2e857d4ce6454f86

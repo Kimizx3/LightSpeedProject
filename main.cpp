@@ -1,10 +1,25 @@
 #include <Graphics.hpp>
-#include <imgui-SFML.h>
-#include <imapi.h>
 #include <iostream>
+#include <imgui-SFML.h>
+#include <imgui.h>
+#include <string>
 
-int main() 
+
+int main(int argc, char* argv[])
 {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    sf::RenderWindow renderWindow (sf::VideoMode(100, 100), "My Window");
+
+    while (renderWindow.isOpen())
+    {
+        sf::Event windowEvent;
+        while (renderWindow.pollEvent(windowEvent))
+        {
+            if (windowEvent.type == sf::Event::EventType::Closed)
+            {
+                renderWindow.close();
+            }
+        }
+    }
+
+    std::cin.get();
 }

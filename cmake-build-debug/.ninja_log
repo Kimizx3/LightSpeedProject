@@ -1,0 +1,7 @@
+# ninja log v6
+1	134	7532485202325487	CMakeFiles/LightSpeedProject.dir/main.cpp.obj.ddi	5532cc5755e6b8f5
+135	162	7532485203672420	CMakeFiles/LightSpeedProject.dir/CXX.dd	92781cafa19f2196
+135	162	7532485203672420	E:/CPPStuff/LightSpeedProject/cmake-build-debug/CMakeFiles/LightSpeedProject.dir/CXXModules.json	92781cafa19f2196
+135	162	7532485203672420	CMakeFiles/LightSpeedProject.dir/main.cpp.obj.modmap	92781cafa19f2196
+166	1290	7532485203985287	CMakeFiles/LightSpeedProject.dir/main.cpp.obj	95bd18d4d3f6d1
+1290	1676	7532485215226889	LightSpeedProject.exe	e21c3a94aea98d2d

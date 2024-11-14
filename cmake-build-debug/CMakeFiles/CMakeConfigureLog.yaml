@@ -153,3 +153,123 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/Clion/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "E:/Clion/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckTypeSize.cmake:250 (check_include_file)"
+      - "cmake-build-debug/_deps/sfml-src/cmake/Config.cmake:10 (check_type_size)"
+      - "cmake-build-debug/_deps/sfml-src/CMakeLists.txt:41 (include)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "E:/CPPStuff/LightSpeedProject/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-39j8z1"
+      binary: "E:/CPPStuff/LightSpeedProject/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-39j8z1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_OSX_SYSROOT: ""
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "E:/CPPStuff/LightSpeedProject/cmake-build-debug/_deps/sfml-src/cmake/CompilerOptionsOverride.cmake"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/CPPStuff/LightSpeedProject/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-39j8z1'
+        
+        Run Build Command(s): "E:/Clion/CLion 2024.1.4/bin/ninja/win/x64/ninja.exe" -v cmTC_466fd
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_466fd.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_466fd.dir\\ /FS -c E:\\CPPStuff\\LightSpeedProject\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-39j8z1\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "E:\\Clion\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_466fd.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_466fd.dir\\CheckIncludeFile.c.obj  /out:cmTC_466fd.exe /implib:cmTC_466fd.lib /pdb:cmTC_466fd.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/Clion/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "E:/Clion/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckTypeSize.cmake:251 (check_include_file)"
+      - "cmake-build-debug/_deps/sfml-src/cmake/Config.cmake:10 (check_type_size)"
+      - "cmake-build-debug/_deps/sfml-src/CMakeLists.txt:41 (include)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "E:/CPPStuff/LightSpeedProject/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sfg4k3"
+      binary: "E:/CPPStuff/LightSpeedProject/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sfg4k3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_OSX_SYSROOT: ""
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "E:/CPPStuff/LightSpeedProject/cmake-build-debug/_deps/sfml-src/cmake/CompilerOptionsOverride.cmake"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/CPPStuff/LightSpeedProject/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sfg4k3'
+        
+        Run Build Command(s): "E:/Clion/CLion 2024.1.4/bin/ninja/win/x64/ninja.exe" -v cmTC_50202
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_50202.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_50202.dir\\ /FS -c E:\\CPPStuff\\LightSpeedProject\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sfg4k3\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "E:\\Clion\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_50202.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_50202.dir\\CheckIncludeFile.c.obj  /out:cmTC_50202.exe /implib:cmTC_50202.lib /pdb:cmTC_50202.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/Clion/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "E:/Clion/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckTypeSize.cmake:252 (check_include_file)"
+      - "cmake-build-debug/_deps/sfml-src/cmake/Config.cmake:10 (check_type_size)"
+      - "cmake-build-debug/_deps/sfml-src/CMakeLists.txt:41 (include)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "E:/CPPStuff/LightSpeedProject/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-edmbbd"
+      binary: "E:/CPPStuff/LightSpeedProject/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-edmbbd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_OSX_SYSROOT: ""
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "E:/CPPStuff/LightSpeedProject/cmake-build-debug/_deps/sfml-src/cmake/CompilerOptionsOverride.cmake"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/CPPStuff/LightSpeedProject/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-edmbbd'
+        
+        Run Build Command(s): "E:/Clion/CLion 2024.1.4/bin/ninja/win/x64/ninja.exe" -v cmTC_a1f6e
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_a1f6e.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_a1f6e.dir\\ /FS -c E:\\CPPStuff\\LightSpeedProject\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-edmbbd\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "E:\\Clion\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_a1f6e.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a1f6e.dir\\CheckIncludeFile.c.obj  /out:cmTC_a1f6e.exe /implib:cmTC_a1f6e.lib /pdb:cmTC_a1f6e.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/Clion/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "E:/Clion/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "cmake-build-debug/_deps/sfml-src/cmake/Config.cmake:10 (check_type_size)"
+      - "cmake-build-debug/_deps/sfml-src/CMakeLists.txt:41 (include)"
+    checks:
+      - "Check size of void*"
+    directories:
+      source: "E:/CPPStuff/LightSpeedProject/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d4h66x"
+      binary: "E:/CPPStuff/LightSpeedProject/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d4h66x"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_OSX_SYSROOT: ""
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "E:/CPPStuff/LightSpeedProject/cmake-build-debug/_deps/sfml-src/cmake/CompilerOptionsOverride.cmake"
+    buildResult:
+      variable: "HAVE_SIZEOF_VOID_PTR"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/CPPStuff/LightSpeedProject/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d4h66x'
+        
+        Run Build Command(s): "E:/Clion/CLion 2024.1.4/bin/ninja/win/x64/ninja.exe" -v cmTC_e2239
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_e2239.dir\\SIZEOF_VOID_PTR.c.obj /FdCMakeFiles\\cmTC_e2239.dir\\ /FS -c E:\\CPPStuff\\LightSpeedProject\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-d4h66x\\SIZEOF_VOID_PTR.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "E:\\Clion\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_e2239.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e2239.dir\\SIZEOF_VOID_PTR.c.obj  /out:cmTC_e2239.exe /implib:cmTC_e2239.lib /pdb:cmTC_e2239.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+...

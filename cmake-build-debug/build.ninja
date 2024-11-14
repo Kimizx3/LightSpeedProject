@@ -53,14 +53,14 @@ build CMakeFiles\LightSpeedProject.dir\main.cpp.obj.ddi: CXX_SCAN__LightSpeedPro
   DEP_FILE = CMakeFiles\LightSpeedProject.dir\main.cpp.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles\LightSpeedProject.dir\main.cpp.obj.ddi
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  INCLUDES = -IC:\SFML-2.6.1\imgui -IC:\SFML-2.6.1\imgui-sfml -IC:\SFML-2.6.1\include\SFML
+  INCLUDES = -IC:\SFML-2.6.1\imgui -IC:\SFML-2.6.1\imgui-sfml -IC:\SFML-2.6.1\include\SFML -external:IC:\SFML-2.6.1\include -external:W0
   OBJ_FILE = CMakeFiles\LightSpeedProject.dir\main.cpp.obj
   PREPROCESSED_OUTPUT_FILE = CMakeFiles\LightSpeedProject.dir\main.cpp.obj.ddi.i
 
 build CMakeFiles\LightSpeedProject.dir\main.cpp.obj: CXX_COMPILER__LightSpeedProject_scanned_Debug E$:\CPPStuff\LightSpeedProject\main.cpp || cmake_object_order_depends_target_LightSpeedProject CMakeFiles\LightSpeedProject.dir\CXX.dd CMakeFiles\LightSpeedProject.dir\main.cpp.obj.modmap
   DYNDEP_MODULE_MAP_FILE = CMakeFiles\LightSpeedProject.dir\main.cpp.obj.modmap
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  INCLUDES = -IC:\SFML-2.6.1\imgui -IC:\SFML-2.6.1\imgui-sfml -IC:\SFML-2.6.1\include\SFML
+  INCLUDES = -IC:\SFML-2.6.1\imgui -IC:\SFML-2.6.1\imgui-sfml -IC:\SFML-2.6.1\include\SFML -external:IC:\SFML-2.6.1\include -external:W0
   OBJECT_DIR = CMakeFiles\LightSpeedProject.dir
   OBJECT_FILE_DIR = CMakeFiles\LightSpeedProject.dir
   TARGET_COMPILE_PDB = CMakeFiles\LightSpeedProject.dir\
@@ -77,10 +77,10 @@ build CMakeFiles\LightSpeedProject.dir\CXX.dd | E$:\CPPStuff\LightSpeedProject\c
 #############################################
 # Link the executable LightSpeedProject.exe
 
-build LightSpeedProject.exe: CXX_EXECUTABLE_LINKER__LightSpeedProject_Debug CMakeFiles\LightSpeedProject.dir\main.cpp.obj
+build LightSpeedProject.exe: CXX_EXECUTABLE_LINKER__LightSpeedProject_Debug CMakeFiles\LightSpeedProject.dir\main.cpp.obj | C$:\SFML-2.6.1\lib\sfml-graphics-d.lib C$:\SFML-2.6.1\lib\sfml-network-d.lib C$:\SFML-2.6.1\lib\sfml-audio-d.lib C$:\SFML-2.6.1\lib\sfml-window-d.lib C$:\SFML-2.6.1\lib\sfml-system-d.lib
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = C:\SFML-2.6.1\lib\sfml-graphics-d.lib  C:\SFML-2.6.1\lib\sfml-network-d.lib  C:\SFML-2.6.1\lib\sfml-audio-d.lib  C:\SFML-2.6.1\lib\sfml-window-d.lib  C:\SFML-2.6.1\lib\sfml-system-d.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\LightSpeedProject.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -88,6 +88,30 @@ build LightSpeedProject.exe: CXX_EXECUTABLE_LINKER__LightSpeedProject_Debug CMak
   TARGET_FILE = LightSpeedProject.exe
   TARGET_IMPLIB = LightSpeedProject.lib
   TARGET_PDB = LightSpeedProject.pdb
+
+
+#############################################
+# Utility command for package
+
+build CMakeFiles\package.util: CUSTOM_COMMAND all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\CPPStuff\LightSpeedProject\cmake-build-debug && "E:\Clion\CLion 2024.1.4\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build package: phony CMakeFiles\package.util
+
+
+#############################################
+# Utility command for package_source
+
+build CMakeFiles\package_source.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\CPPStuff\LightSpeedProject\cmake-build-debug && "E:\Clion\CLion 2024.1.4\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackSourceConfig.cmake E:/CPPStuff/LightSpeedProject/cmake-build-debug/CPackSourceConfig.cmake"
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build package_source: phony CMakeFiles\package_source.util
 
 
 #############################################
@@ -134,14 +158,14 @@ build all: phony LightSpeedProject.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles\3.28.1\CMakeCCompiler.cmake CMakeFiles\3.28.1\CMakeCXXCompiler.cmake CMakeFiles\3.28.1\CMakeRCCompiler.cmake CMakeFiles\3.28.1\CMakeSystem.cmake E$:\CPPStuff\LightSpeedProject\CMakeLists.txt E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeCInformation.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeCXXInformation.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeGenericSystem.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeRCInformation.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\MSVC.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake
+build build.ninja: RERUN_CMAKE | C$:\SFML-2.6.1\lib\cmake\SFML\SFMLConfig.cmake C$:\SFML-2.6.1\lib\cmake\SFML\SFMLConfigDependencies.cmake C$:\SFML-2.6.1\lib\cmake\SFML\SFMLConfigVersion.cmake C$:\SFML-2.6.1\lib\cmake\SFML\SFMLSharedTargets-debug.cmake C$:\SFML-2.6.1\lib\cmake\SFML\SFMLSharedTargets-release.cmake C$:\SFML-2.6.1\lib\cmake\SFML\SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles\3.28.1\CMakeCCompiler.cmake CMakeFiles\3.28.1\CMakeCXXCompiler.cmake CMakeFiles\3.28.1\CMakeRCCompiler.cmake CMakeFiles\3.28.1\CMakeSystem.cmake E$:\CPPStuff\LightSpeedProject\CMakeLists.txt E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeCInformation.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeCXXInformation.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeGenericSystem.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeRCInformation.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\MSVC.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles\3.28.1\CMakeCCompiler.cmake CMakeFiles\3.28.1\CMakeCXXCompiler.cmake CMakeFiles\3.28.1\CMakeRCCompiler.cmake CMakeFiles\3.28.1\CMakeSystem.cmake E$:\CPPStuff\LightSpeedProject\CMakeLists.txt E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeCInformation.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeCXXInformation.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeGenericSystem.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeRCInformation.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\MSVC.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake: phony
+build C$:\SFML-2.6.1\lib\cmake\SFML\SFMLConfig.cmake C$:\SFML-2.6.1\lib\cmake\SFML\SFMLConfigDependencies.cmake C$:\SFML-2.6.1\lib\cmake\SFML\SFMLConfigVersion.cmake C$:\SFML-2.6.1\lib\cmake\SFML\SFMLSharedTargets-debug.cmake C$:\SFML-2.6.1\lib\cmake\SFML\SFMLSharedTargets-release.cmake C$:\SFML-2.6.1\lib\cmake\SFML\SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles\3.28.1\CMakeCCompiler.cmake CMakeFiles\3.28.1\CMakeCXXCompiler.cmake CMakeFiles\3.28.1\CMakeRCCompiler.cmake CMakeFiles\3.28.1\CMakeSystem.cmake E$:\CPPStuff\LightSpeedProject\CMakeLists.txt E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeCInformation.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeCXXInformation.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeGenericSystem.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeRCInformation.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\MSVC.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows.cmake E$:\Clion\CLion$ 2024.1.4\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake: phony
 
 
 #############################################

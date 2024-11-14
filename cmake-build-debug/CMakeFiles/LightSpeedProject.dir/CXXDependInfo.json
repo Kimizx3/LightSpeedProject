@@ -15,7 +15,8 @@
 	[
 		"C:\\SFML-2.6.1\\imgui",
 		"C:\\SFML-2.6.1\\imgui-sfml",
-		"C:\\SFML-2.6.1\\include\\SFML"
+		"C:\\SFML-2.6.1\\include\\SFML",
+		"C:\\SFML-2.6.1\\include"
 	],
 	"language" : "CXX",
 	"linked-target-dirs" : [],
