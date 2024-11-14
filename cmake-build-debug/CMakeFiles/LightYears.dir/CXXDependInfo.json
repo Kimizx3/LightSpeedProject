@@ -1,0 +1,24 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "MSVC",
+	"compiler-id" : "MSVC",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "E:/CPPStuff/LightSpeedProject/cmake-build-debug",
+	"dir-cur-src" : "E:/CPPStuff/LightSpeedProject",
+	"dir-top-bld" : "E:/CPPStuff/LightSpeedProject/cmake-build-debug",
+	"dir-top-src" : "E:/CPPStuff/LightSpeedProject",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"C:\\SFML-2.6.1\\imgui",
+		"C:\\SFML-2.6.1\\imgui-sfml",
+		"C:\\SFML-2.6.1\\include\\SFML",
+		"C:\\SFML-2.6.1\\include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "E:/CPPStuff/LightSpeedProject/cmake-build-debug/CMakeFiles/LightYears.dir"
+}

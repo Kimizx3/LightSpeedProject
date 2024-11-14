@@ -21,8 +21,7 @@ BUILD_SHARED_LIBS:BOOL=TRUE
 //Path to a program.
 CMAKE_AR:FILEPATH=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/lib.exe
 
-//Choose the type of build, options are: None Debug Release RelWithDebInfo
-// MinSizeRel ...
+//Choose the type of build (Debug or Release)
 CMAKE_BUILD_TYPE:STRING=Debug
 
 //Enable colored diagnostics throughout.
@@ -340,6 +339,15 @@ LightSpeedProject_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 LightSpeedProject_SOURCE_DIR:STATIC=E:/CPPStuff/LightSpeedProject
 
+//Value Computed by CMake
+LightYears_BINARY_DIR:STATIC=E:/CPPStuff/LightSpeedProject/cmake-build-debug
+
+//Value Computed by CMake
+LightYears_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+LightYears_SOURCE_DIR:STATIC=E:/CPPStuff/LightSpeedProject
+
 //Path to a file.
 OGG_INCLUDE_DIR:PATH=E:/CPPStuff/LightSpeedProject/cmake-build-debug/_deps/sfml-src/extlibs/headers
 
@@ -576,7 +584,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib

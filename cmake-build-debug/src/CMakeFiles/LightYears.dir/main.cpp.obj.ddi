@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "src\\CMakeFiles\\LightYears.dir\\main.cpp.obj",
+            "outputs": [
+                "E:\\CPPStuff\\LightSpeedProject\\cmake-build-debug\\vc140.pdb",
+                "src\\CMakeFiles\\LightYears.dir\\main.cpp.obj.ddi"
+            ],
+            "requires": []
+        }
+    ]
+}
